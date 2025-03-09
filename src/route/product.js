@@ -18,9 +18,9 @@ router.get('/product-create', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('product-index', {
+  res.render('index', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
-    style: 'product-index',
+    style: 'index',
 
     data: {},
   })

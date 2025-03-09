@@ -10,10 +10,32 @@
   padding-bottom: 4px;
   border-bottom: 1px solid #ddd;
 }
+.form__header {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+.form__subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
 .form__direction {
   display: flex;
   padding: 16px;
   gap: 32px;
+}
+.form__card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 16px;
+  gap: 32px;
+  text-wrap: wrap;
+}
+.form__grid {
+  padding: 8px;
+  margin-bottom: 8px;
 }
 .form__content {
   display: grid;
@@ -42,6 +64,12 @@
   padding: 8px;
   border-radius: 10px;
   background-color: #0000FF;
+}
+.form__button-right {
+  position: absolute;
+  right: 20px;
+  padding: 10px;
+  border-radius: 10px;
 }
 .form .main {
   display: flex;
