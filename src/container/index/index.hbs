@@ -92,38 +92,36 @@
     <div class="form">
 <h2 class="form__title">Product list</h2>
 <form method="POST" action="/product-create">
-
   <div class="form__content">
   <div class="form__direction">
-    <div class="form__filed">
-      <label for="id" class="form__label">ID:</label>
-       <input type="id" name="product name" class="form__input">
-    </div>
- 
 
   <div class="form__filed">
-    <label for="date" class="form__label">Date:</label>
-    <input type="date" name="date" class="form__input">
+      <label for="id" class="form__label">ID:</label>
+      <input type="id" name="product name" class="form__input">
   </div>
-</div>
 
-<div class="form__field">
-  <label for="name" class="form__label">Product name:</label>
-  <input type="name" class="form__input">
-</div>
+  <div class="form__filed">
+     <label for="date" class="form__label">Date:</label>
+     <input type="date" name="date" class="form__input">
+  </div>
+  </div>
 
+  <div class="form__field">
+    <label for="name" class="form__label">Product name:</label>
+    <input type="name" class="form__input">
+  </div>
 
-<div class="form__field">
-  <label for="price" class="form__label">Price:</label>
-  <input type="price" class="form__input">
-</div>
+  <div class="form__field">
+    <label for="price" class="form__label">Price:</label>
+   <input type="price" class="form__input">
+  </div>
 
-<div class="form__field">
-  <label for="description" class="form__label">Product description:</label>
-  <input type="description" class="form__input">
-</div>
+  <div class="form__field">
+    <label for="description" class="form__label">Product description:</label>
+    <input type="description" class="form__input">
+  </div>
 
- <button class="form__button">Create:</button>
+  <button class="form__button">Create:</button>
    </div>
 </form>
     </div>
@@ -132,51 +130,93 @@
   <section>
     <div class="form">
       <div class="form__content">
+        <div class="form__alert-direction">
         <h1 class="form__header">Successful execution of the action</h1>
         <strong class="form__subtitle">The item was successfully deleted</strong>
         
         <div class="form__button-right">
-          <button class="form__button">Return:</button>
+          <button class="form__btn">Return:</button>
         </div>
-
+      </div>
       </div>
     </div>
   </section>
   
 
   <section>
-    <div class="form__grid">
-    <h2 class="form__title">The Dream Collection</h2>
-    <div class="form__card-container">
-      
-    <div class="form__content">
-      <h1 class="form__header">Whipper Shower foam</h1>
-        <strong class="form__subtitle">whipper Shower foam, 250 ml</strong>
-          <label for="" class="form__label">ID: 151467</label>
-            <h3 class="form__price">£ 10.90</h3>
-            <button class="form__edit">Edit</button>
-          
-        
-    </div>
+    <div class="form__card-container"> 
+      <h2 class="form__title-noline">The Dream Collection</h2>
+        <div class="form__cards-direction"> 
+        <div class="form__card"> 
+          <div class="form__card-content">
+          <h1 class="form__header">Whipper Shower foam</h1>
+          <strong class="form__subtitle">whipper Shower foam, 250 ml</strong>
+          <label class="form__label">ID: 151467</label>
+          <h3 class="form__price">£ 10.90</h3>
+          <button class="form__btn-edit">Edit</button>     
+          </div>
+        </div> 
 
-     <div class="form__content">  
-      <h1 class="form__header">Body Cream</h1>
-        <strong class="form__subtitle">The Dream Collection, soft glow body cream, 220 ml</strong>
-           <label for="" class="form__label">ID: 151468</label>
+          <div class="form__card">  
+          <div class="form__card-content">
+            <h1 class="form__header">Body Cream</h1>
+            <strong class="form__subtitle">The Dream Collection, soft glow body cream, 220 ml</strong>
+            <label class="form__label">ID: 151468</label>
             <h3 class="form__price">£ 23.90</h3>
-          <button class="form__edit">Edit</button>
+             <button class="form__btn-edit">Edit</button>
           </div>
-    
+          </div>
 
-    <div class="form__content">
-      <h1 class="form__header">Hair and Body Mist</h1>
-         <strong class="form__subtitle">The Dream Collection, morning dew hair and body mist, 50 ml</strong>
-          <label for="" class="form__label">ID: 151469</label>
+          <div class="form__card">  
+          <div class="form__card-content">
+            <h1 class="form__header">Body Lotion Mousse</h1>
+            <strong class="form__subtitle">The Dream Collection, pastel sky body lotion mousse, 150 ml</strong>
+            <label class="form__label">ID: 151469</label>
+            <h3 class="form__price">£ 17.00</h3>
+             <button class="form__btn-edit">Edit</button>
+          </div>
+          </div>
+
+          <div class="form__card">  
+          <div class="form__card-content">
+            <h1 class="form__header">Shimmering Hand Wash</h1>
+            <strong class="form__subtitle">The Dream Collection, moon dust hand wash, 300 ml</strong>
+            <label class="form__label">ID: 151470</label>
+            <h3 class="form__price">£ 17.00</h3>
+             <button class="form__btn-edit">Edit</button>
+          </div>
+          </div>
+
+          <div class="form__card">  
+          <div class="form__card-content">
+            <h1 class="form__header">Cloudscape</h1>
+            <strong class="form__subtitle">The Dream Collection, eau de parfum, 50 ml</strong>
+            <label class="form__label">ID: 151471</label>
+            <h3 class="form__price">£ 50.00</h3>
+             <button class="form__btn-edit">Edit</button>
+          </div>
+          </div>
+
+          <div class="form__card"> 
+          <div class="form__card-content"> 
+            <h1 class="form__header">Hair and Body Mist</h1>
+            <strong class="form__subtitle">The Dream Collection, morning dew hair and body mist, 50 ml</strong>
+            <label class="form__label">ID: 151471</label>
+            
             <h3 class="form__price">£ 26.00</h3>
-          <button class="form__edit">Edit</button>
+            <button class="form__btn-edit">Edit</button>
+          
+          </div> 
           </div>
-    </div>
-
-</div>
+        </div>
+    </div> 
   </section>
+
+<section>
+ <div class="form">
+  <div class="form__content">
+    
+  </div>
+ </div>
+</section>
 </main>
