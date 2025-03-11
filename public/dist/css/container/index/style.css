@@ -24,6 +24,120 @@ body {
   margin-bottom: 8px;
   box-shadow: 0px 2px 4px rgb(157, 158, 157);
 }
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form__direction {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 1px;
+}
+.form__btn-direction {
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+  padding: 8px;
+  margin-bottom: 30px;
+}
+.form__cards-direction {
+  display: grid;
+  grid-template-columns: repeat(3, fr);
+}
+.form__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.form__alert-direction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allows the button to move to the next row */
+  text-align: left;
+  gap: 10px;
+}
+.form__card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  padding: 20px;
+  margin-bottom: 8px;
+  padding: 16px;
+  gap: 32px;
+}
+.form__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  gap: 32px;
+  text-wrap: wrap;
+  float: left;
+}
+.form__card {
+  width: 300px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgb(157, 158, 157);
+  margin: 20px;
+}
+.form__button-main {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #4848e7;
+  color: white;
+  border-radius: 6px;
+  line-height: 1.3;
+}
+.form__button-right {
+  display: block;
+  justify-content: flex-end;
+  position: absolute;
+  right: 20px;
+  width: 45%;
+  margin: auto;
+  padding: 8px;
+  background-color: #4848e7;
+  color: white;
+  text-decoration: none;
+  line-height: 1.3;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+.form__button-left {
+  display: block;
+  justify-content: flex-start;
+  position: absolute;
+  left: 20px;
+  margin: auto;
+  padding: 8px;
+  width: 45%;
+  background-color: #e10e35;
+  color: white;
+  text-decoration: none;
+  line-height: 1.3;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+.form__button-edit {
+  display: block;
+  margin: auto;
+  margin-top: 16px;
+  padding: 8px 16px;
+  margin: auto;
+  color: #4848e7;
+  text-decoration: none;
+  line-height: 1.3;
+  font-weight: bold;
+  width: 150px;
+}
 .form__title {
   font-size: 20px;
   font-weight: bold;
@@ -38,64 +152,20 @@ body {
 .form__header {
   font-size: 20px;
   font-weight: bold;
-  padding: 4px;
+  padding: 0px;
 }
 .form__subtitle {
   font-size: 14px;
   font-weight: 500;
   padding-bottom: 4px;
 }
-.form__direction {
-  display: flex;
-  padding: 16px;
-  gap: 32px;
-}
-.form__cards-direction {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.form__alert-direction {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap; /* Allows the button to move to the next row */
-  text-align: left;
-  gap: 10px;
-}
-.form__card-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  padding: 20px;
-  margin-bottom: 8px;
-  padding: 16px;
-  gap: 32px;
-}
-.form__card {
-  width: 400px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 2px 4px rgb(157, 158, 157);
-  margin: 20px;
-}
-.form__card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 16px;
-  gap: 32px;
-  text-wrap: wrap;
-}
-.form__field {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
 .form__label {
   font-size: 14px;
+}
+.form__label-underline {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(73, 73, 73);
 }
 .form__price {
   font-size: 18px;
@@ -105,44 +175,6 @@ body {
   border: 1px solid #ddd;
   padding: 8px;
   border-radius: 10px;
-}
-.form__button {
-  border: 1px solid #ddd;
-  padding: 8px;
-  background-color: #4848e7;
-  color: white;
-  border-radius: 4px;
-  line-height: 1.3;
-}
-.form__btn {
-  margin-top: 16px;
-  padding: 8px 16px;
-  background-color: #4848e7;
-  color: white;
-  text-decoration: none;
-  line-height: 1.3;
-  width: 200px;
-  border-radius: 4px;
-}
-.form__button-right {
-  position: absolute;
-  right: 20px;
-  margin-right: 10px;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-.form__btn-edit {
-  display: block;
-  margin: auto;
-  margin-top: 16px;
-  padding: 8px 16px;
-  background-color: greenyellow;
-  color: #4848e7;
-  text-decoration: none;
-  line-height: 1.3;
-  font-weight: bold;
-  width: 150px;
 }
 .form .main {
   display: flex;
