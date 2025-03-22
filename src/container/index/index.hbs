@@ -97,12 +97,12 @@
 
   <div class="form__filed">
       <label for="id" class="form__label">ID:</label>
-      <input type="id" name="product name" class="form__input">
+      <input type="id" name="product name" class="form__input-hulf">
   </div>
 
   <div class="form__filed">
      <label for="date" class="form__label">Date:</label>
-     <input type="date" name="date" class="form__input">
+     <input type="date" name="date" class="form__input-hulf">
   </div>
   </div>
 
@@ -132,10 +132,10 @@
       <div class="form__content">
         <div class="form__alert-direction">
         <h1 class="form__header">Successful execution of the action</h1>
+          <h1 class="form__header">{{data.message}}</h1>
         <strong class="form__subtitle">The item was successfully deleted</strong>
-        
-        <button class="form__button-right">Return:</button>
-        
+        <strong class="form__subtitle">{{data.info}}</strong>
+        <a href="{{data.link}}" class="form__button-right">Return:</a>
       </div>
       </div>
     </div>

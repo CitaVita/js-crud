@@ -10,8 +10,27 @@ class Product {
 }
 // ================================================================
 
-
 // router.get Створює нам один ентпоїнт
+
+router.get('/', function (req, res) {
+  
+   
+    res.render('alert', {  
+      style: 'alert',
+      
+      data: {
+        message: 'Successful execution of the action',
+        info: 'The item was successfully deleted',
+        link: '/test-path'
+      },
+    }) 
+  })
+
+
+
+// ================================================================
+// router.get Створює нам один ентпоїнт
+
 
 // ↙️ тут вводимо шлях (PATH) до сторінки
 router.get('/product-create', function (req, res) {
@@ -22,7 +41,9 @@ router.get('/product-create', function (req, res) {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'index',
 
-    data: {},
+    data: {
+      
+    },
   })
   // ↑↑ сюди вводимо JSON дані
 })
